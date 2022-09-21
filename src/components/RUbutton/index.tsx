@@ -1,12 +1,17 @@
 import React from 'react'
 
-import {Button} from './styles'
+import { Button } from './styles'
 
+export interface RUbuttonProps {
+    label?: string
+    typeButton?: 'primary' | 'secondary',
+    onClick?: () => void
+}
 
-export const RUbutton = () => {
+export const RUbutton = ({ label, typeButton = 'primary', onClick }: RUbuttonProps) => {
     return (
-        <Button>
-            Entrar
+        <Button onClick={onClick} typeButton={typeButton}>
+            {label}
         </Button>
     )
 }

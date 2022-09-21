@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "randomui",
+  "name": "randomuilib",
   "author": "italo",
   "module": "dist/randomui.esm.js",
   "size-limit": [
